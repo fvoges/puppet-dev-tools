@@ -37,8 +37,9 @@ RUN yum install -y centos-release-scl \
 
 # Install dependent gems
 RUN gem install --no-ri --no-rdoc r10k \
+      bundler \
       json \
-      puppet:5.3.3 \
+      puppet:6.4.0 \
       rubocop \
       puppetlabs_spec_helper \
       puppet-lint \
